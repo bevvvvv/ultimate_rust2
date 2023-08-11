@@ -1,3 +1,9 @@
+/*!
+ * A pumpkin is a vernacular term for mature winter squash of species and varieties in the genus Cucurbita that has culinary and cultural significance[1][2] but no agreed upon botanical or scientific meaning.[3] The term pumpkin is sometimes used interchangeably with "squash" or "winter squash", and is commonly used for cultivars of Cucurbita argyrosperma, Cucurbita ficifolia, Cucurbita maxima, Cucurbita moschata, and Cucurbita pepo.[1]
+ *
+ * ![Pumpkins](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/FrenchMarketPumpkinsB.jpg/700px-FrenchMarketPumpkinsB.jpg)
+*/
+
 // 1. Thank you for volunteering to document our pumpkin library! Let's start by grabbing the first
 // paragraph from https://en.wikipedia.org/wiki/Pumpkin and pasting it as our module-level
 // documentation. Hint: Use inner-documentation comments.
@@ -15,8 +21,15 @@
 // - Document the "roundness" field, explaining that it is a percentage
 // - Document the "orangeness" field, explaining that it is a number from 8 to 27
 
+/// Big orange thing
+///
+/// # Recipes
+///
+/// Recipes coming soon.
 pub struct Pumpkin {
+    /// roundness is a percentage.
     pub roundness: f32,
+    /// orangeness is a number from 8 to 27.
     pub orangeness: i32,
 }
 
@@ -24,12 +37,14 @@ pub struct Pumpkin {
 // can't be used for pie. :'-(
 
 impl Pumpkin {
+    /// smash will destroy the pumpkin, which can then no longer be used for pie.
     pub fn smash(self) {}
 }
 
 // 5. Document that BURNT_ORANGE is for the "orangeness" field in the Pumpkin struct.
 // - Link to the Pumpkin struct in your description
 
+/// BURNT_ORANGE is a constant for the "orangeness" field in the [Pumpkin] struct.
 pub const BURNT_ORANGE: i32 = 13;
 
 // Challenge: Find the option to pass to `cargo doc` so that documentation for this private item
