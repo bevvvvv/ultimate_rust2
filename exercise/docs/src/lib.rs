@@ -27,9 +27,9 @@
 ///
 /// Recipes coming soon.
 pub struct Pumpkin {
-    /// roundness is a percentage.
+    /// `roundness` is a percentage.
     pub roundness: f32,
-    /// orangeness is a number from 8 to 27.
+    /// `orangeness` is a number from 8 to 27.
     pub orangeness: i32,
 }
 
