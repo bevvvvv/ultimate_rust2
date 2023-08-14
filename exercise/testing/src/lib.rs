@@ -31,12 +31,16 @@ mod test {
     // Hint: Don't forget the `#[test]` attribute for your test function!
     #[test]
     fn test_sploosh() {
-        let want = 4;
+        let mut want = 4;
         let mut got = sploosh(1, 2, 3);
         assert_eq!(got, want);
 
         got = sploosh(5, 6, 7);
         assert_ne!(got, want);
+
+        want = 99;
+        got = sploosh(-1, 0, 0);
+        assert_eq!(got, want);
     }
 
     // 4. Write a test function that verifies the following conditions using the `assert!` macro
