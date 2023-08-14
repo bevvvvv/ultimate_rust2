@@ -42,17 +42,11 @@ impl Frog {
 impl Default for Frog {
     fn default() -> Self {
         // 6. Use trace!() to log that a default value was generated, with the debug representation
-        trace!(
-            target: "Frog::default",
-            "The default value is {:?}",
-            Self {
-                energy: 5,
-                sleeping: false,
-            }
-        );
-        Self {
+        let frog = Self {
             energy: 5,
             sleeping: false,
-        }
+        };
+        trace!(target: "Frog::default", "The default value is {:?}", frog);
+        return frog;
     }
 }
