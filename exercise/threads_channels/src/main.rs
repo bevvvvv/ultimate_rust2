@@ -37,8 +37,8 @@ fn main() {
     // to a variable named `result`
     // - Get the i32 out of `result` and store it in a `sum` variable.
 
-    let result = handle.join().unwrap();
-    let sum = result;
+    let result = handle.join();
+    let sum = result.unwrap();
     println!("The child thread's expensive sum is {}", sum);
 
     // 3. Time for some fun with channels!
